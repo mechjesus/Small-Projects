@@ -1,0 +1,15 @@
+﻿Name: Kevin Bedard
+Ada: bedkev01
+Project Name: GeoCryptr
+Version 1.0.0
+ 
+Goal: To create a program in python that will encrypt a text file on a bit level with an algorithm. Doing so, the program will push two documents to the users directory, an encrypted version of the text, and a program generated key used to decrypt the file.
+
+
+Details: The program will be ran through the command interface similar to the DNA analysis program. The user will select their .txt file and run it through GeoCryptr. The program will then run the text through an algorithm made for GeoCryptr exclusively. This algorithm will encrypt the text in the file. However the encrypted version of the text will be placed in a document the program has created and pushed into the directory the user provided the text from. Once this has been done the program will push a second text file as well, this file will be the key used to decrypt the text. The Key will basically act as a seed to determine where to start in the encrypt / decrypt process. The user or any user with the encrypted text, key, and program can then run the encrypted text through the program and then provide the key when prompted. After this the program will push a new decrypted version of the file it received to the directory the encrypted file came from. 
+
+
+Reason: This is mainly to be a to learn project to get me introduced to algorithms and encryption in general. I feel that in order to make this work, and to truly understand myself how it is working, I will have to obtain a comparatively robust knowledge base of python and its capabilities. I do not expect it to be able to hold up to other projects that perform similarly, but it will be unique and it will be educational. 
+
+
+Final Thoughts: Initially I intended to have the key to be created automatically by the program based on date / time the file was encrypted. However this bring inherent security issues. For example, if I have a program or operation that creates several at the same time it will make it pretty simple from my understanding for someone to recognize the pattern and start reverse engineering. Even though professional level security is not my ultimate goal here, I want to get as close as I can. This lead me to using a rolling cipher and block cipher chaining. This would lead to a level of pseudo-randomness that I feel would outclass the original intention. Another option that has been considered would be using a XOR cipher however in researching this process I discovered that it is relatively simple and short (see under 30 lines), and although it is arguable effective as long as the key is “random enough” I aim to sway away from using it. Ultimately in the end I want it to achieve the before mentioned goal, and to do so in a more-than-not-secure way. This is also why I am excited about this idea. The more I delve into even ideas about what I can do for it, the more options and possibilities are shown to me. And I am sure it will continue to do so exponentially even as I get my hands on it and start working on it.
