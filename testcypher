@@ -1,0 +1,15 @@
+def main():
+  txt = 'test'
+  mykey = 'key'
+  print(encrypt(txt, mykey))
+  return
+
+def encrypt(plaintxt, key):
+  LETTERS = 'ABCDEFGHOJKLMNOPQRSTUVWXYZ'
+  plaintxt = plaintxt.upper()
+  ciphertxt = ''
+  for l in in plaintxt:
+    index = letters.find(l)
+    c = key[index]
+    ciphertxt += c
+  return ciphertxt
