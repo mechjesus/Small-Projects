@@ -1,8 +1,10 @@
 ### IMPORTANT !!!!
 ###
-### this is still very unstable. Always with the errors. Right now trying no spaced lower case entries with numerals for a key.
-### I could make it where the user HAS to do this, but I would rather try and fix it. Sometimes multi all case words
-### work, however I have not gotten to be able to figure out why yet. Please bare with me. 
+### this is still very unstable. Always with the errors. Please bare with me. 
+### For right now your key has to be numerical, some really wierd things will happen if you ignore this.
+### I saw a computer set on fire once. I can't proove that a non numeric key generation started it,
+### But I am pretty sure they have to be connected. Seriously, dont do it. 
+### In the next couple days I will either fix that, or prevent the user from puting in non int. characters for the key.
 ### Also I will make it to where you dont need to relaunch it everytime, this will be mostly for bugtesting purposes. 
 
 ## Quick note on some of the things used later in the code. 
@@ -42,9 +44,9 @@ if taskask == 'encrypt':
     
     encrypt = ''.join(chr(ord(a)^ord(b)) for a,b in izip(text, cycle(key))) # refrence double hash comments to see what this is doing
     
-    print'Encrypted text follows: '
+    print'Encrypted text follows: ' 
     
-    print encrypt
+    print encrypt # I will change this to pushing the information in its own document later, or making it a choice.# I will change this to pushing the information in its own document later, or making it a choice.
 
 #Decryption option follows
 
@@ -52,13 +54,13 @@ elif taskask == 'decrypt':
    
     text = raw_input('Decrypt the following text: ')
    
-    key = raw_input('Use the following key: ')
+    key = raw_input('Use the following key: ') #Note to future, until non int key bug is fixed, put an if statement here to precent them from doing so. 
    
     decrypt = ''.join(chr(ord(y)^ord(z)) for y,z in izip(text, cycle(key))) # refrence double hash comments to see what this is doing
    
     print 'Decrypted text follows: '
    
-    print decrypt
+    print decrypt # I will change this to pushing the information in its own document later, or making it a choice. The key will be seperate.
 
 #Decryption option follows
 
