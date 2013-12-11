@@ -6,6 +6,10 @@ This is just a small list of potential ideas to take on
 
 + Encryption Script
 	+ would encrypt and push a key in same dir
+	+bit level encryption
+	+txt file as input
+	+ASCII coding
+
 
 + Sorting algorithm
 	+ would handle large amount of int. / sets
