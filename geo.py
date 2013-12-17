@@ -1,20 +1,15 @@
 ### IMPORTANT !!!!
 
-### This is still unstable. Always with the errors. Please bare with me. 
 ### For right now your key has to be numerical, some really wierd things will happen if you ignore this.
 ### I saw a computer set on fire once. I can't proove that a non numeric key generation started it,
 ### But I am pretty sure they have to be connected. Seriously, dont do it. 
-### In the next couple days I will either fix that, or prevent the user from puting in non int. characters for the key.
-### Also I will make it to where you dont need to relaunch it everytime, this will be mostly for bugtesting purposes. 
 
-## Used functions to make the program repeat as many times as the user wants, and added a goodbye message because manners
-## are important, damnit!
 ## Ignore the emptytripple hashtags, those are for personal reminders of where I am activley working
 
 # itertools lets me xor non intigers which is needed. 
 from itertools import cycle, izip
 
-# Program greting that will also let the program know what the user intends to use it for this time
+# Program greting
 
 print 'Welcome to GeoCryptr! '
 ###
@@ -25,7 +20,6 @@ def initial():
     print taskask
 
     #Nitty Gritty
-
     #Encryption option follows
 
     if taskask == 'encrypt'.lower() : 
