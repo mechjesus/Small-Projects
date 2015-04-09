@@ -1,8 +1,7 @@
 ### IMPORTANT !!!!
 
 ### For right now your key has to be numerical, some really wierd things will happen if you ignore this.
-### I saw a computer set on fire once. I can't proove that a non numeric key generation started it,
-### But I am pretty sure they have to be connected. Seriously, dont do it. 
+### I saw a computer set on fire once.
 
 ## Ignore the emptytripple hashtags, those are for personal reminders of where I am activley working
 
